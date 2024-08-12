@@ -1,0 +1,267 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: robot;
+}
+.hide{
+    display: none;
+}
+.hide1{
+    display: none;
+}
+body{
+    background: hsl(235, 18%, 26%);
+}
+#hero{
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+    margin: 50px auto;
+    border-radius: 20px ;
+    
+    
+}
+.king{
+    height: 100%;
+    width: 95%; 
+    margin: auto;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+        
+}
+.ldiv{
+    padding: 100px 20px;
+    width: 40%;
+}
+.ldiv h1{
+    color: hsl(234, 29%, 20%);
+    font-size: 60px;
+}
+.ldiv p {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.uli{
+    display: block;
+}
+.uli div{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+.uli div img{
+    padding-right: 10px;
+}
+.uli div p{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.ldiv label{
+    padding: 20px 0;
+    line-height: 40px;
+    font-size: 14px;
+}
+.ldiv #emailInput{
+    width: 400px;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid hsl(231, 7%, 60%);
+    padding-left: 20px;
+    transition: .3s;
+    color: #000;
+    margin-bottom: 20px;
+}
+.ldiv #emailInput:hover{
+    border: 1px solid #000;
+}
+.ldiv a{
+    text-decoration: none;
+    width: 400px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: none;
+    background-color:hsl(234, 29%, 20%) ;
+    color: #fff;
+    transition: 1s;
+}
+.ldiv a:hover{
+    background: linear-gradient(to right, hsl(4, 92%, 62%), hsl(4, 100%, 67%));
+    box-shadow: 10px 5px 10000px hsla(4, 92%, 62%, 0.584);
+
+}
+
+.rdiv{
+    width: 40%;
+    padding: 10px 10px;
+}
+.rdiv img{
+    width: 100%;
+    height: 100%;
+}
+.error-background {
+    background-color: #ffcccc; /* لون خلفية أحمر فاتح */
+}
+.error-border {
+    border: 2px solid red; /* إطار أحمر */
+}
+.sucssful{
+    width: 35%;
+    height: 500px;
+    background-color: #fff;
+    margin: 100px auto;
+    border-radius: 20px ;
+    display: none;
+}
+.sucssful .king1{
+    display: block;
+    height: 100%;
+    width: 70%;
+    padding: 50px 0;
+    margin: auto; 
+}
+.king1 h2{
+    font-family: Robot;
+    font-size: 60px;
+    padding: 20px 0;
+}
+ .king1 p{
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+.king  button{
+    width: 400px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    background-color:hsl(234, 29%, 20%) ;
+    color: #fff;
+    transition: 1s;
+}
+ .king button:hover{
+    background: linear-gradient(to right, hsl(4, 92%, 62%), hsl(4, 100%, 67%));
+    box-shadow: 10px 5px 10000px hsla(4, 92%, 62%, 0.584);
+}
+
+.king1 p{
+    margin-bottom: 20px;
+}
+.king1 a{
+    padding: 15px 100px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: none;
+    background-color:hsl(234, 29%, 20%) ;
+    color: #fff;
+    transition: 1s;
+    text-decoration: none;
+}
+.king1 a:hover{
+    background: linear-gradient(to right, hsl(4, 92%, 62%), hsl(4, 100%, 67%));
+    box-shadow: 10px 5px 10000px hsla(4, 92%, 62%, 0.584);
+}
+@font-face {
+    font-family: Robot;
+    src: url(../assets/fonts/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: robot ;
+    src: url(../assets/fonts/Roboto-Regular.ttf);
+}
+@media (max-width: 950px) {
+    #hero{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+    #hero .king{
+        flex-direction: column-reverse;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+    #hero .king .des{
+        display: none;
+    }
+    #hero .king .mop{
+        display: block;
+        width: 100%;
+    }
+    .rdiv{
+        width: 100%;
+        padding: 0;
+    }
+    .ldiv{
+        width: 100%;
+        padding-left: 40px;
+    }
+    form input{
+        margin-bottom: 10px;
+    }
+    form label{
+        font-size: 12px;
+    }
+    .ldiv #emailInput{
+        width: 300px;
+        height: 45px;
+        border-radius: 5px;
+        border: 1px solid hsl(231, 7%, 60%);
+        padding-left: 20px;
+        transition: .3s;
+        color: #000;
+    }  
+    .ldiv button{
+        width: 300px;
+        height: 45px;
+        border-radius: 10px;
+        margin-top: 10px;
+        border: none;
+        background-color:hsl(234, 29%, 20%) ;
+        color: #fff;
+        transition: 1s;
+    } 
+    .uli{
+        display: block;
+    }
+    .sucssful{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+    .sucssful .king1{
+        display: block;
+        height: 100vh;
+        width: 80%;
+        padding-top: 100px;
+        margin: 0 30px;
+        
+        
+    }
+    .king1 h2{
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .king1 p{
+        margin-bottom: 200px;
+        width: 350px;
+    }
+    .king1 a{
+        padding: 15px 130px;
+        border-radius: 10px;
+        margin: auto;
+        border: none;
+        background-color:hsl(234, 29%, 20%) ;
+        color: #fff;
+        transition: 1s;
+        text-decoration: none;
+        
+    }
+}
